@@ -1,0 +1,24 @@
+﻿<!--This defines the model type for this view, indicating it will be an IEnumerable of Class objects-->
+
+@model IEnumerable<SchoolProject.Models.Class>
+
+
+<!--Set the title of the page to "List" in the ViewBag-->
+@{
+    ViewBag.Title = "List";
+}
+
+<h2>I want to display a list of classes</h2>
+
+<!--loop through each Class object in the Model and for each Class object display its properties-->
+@{
+    foreach (SchoolProject.Models.Class Classes in Model)
+    {
+        <div><p>@Classes.classId @Classes.classcode @Classes.classname</p></div>
+    }
+}
+
+
+
+
+

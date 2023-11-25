@@ -1,0 +1,20 @@
+﻿<!--This defines the model type for this view, indicating it will be an IEnumerable of Student objects-->
+@model IEnumerable<SchoolProject.Models.Student>
+
+
+<!--Set the title of the page to "List" in the ViewBag-->
+@{
+    ViewBag.Title = "List";
+}
+
+<h2>I want to see a list of students</h2>
+
+
+<!--loop through each Student object in the Model and for each Student object display its properties-->
+@{
+    foreach (SchoolProject.Models.Student Students in Model)
+    {
+        <div>@Students.studentfname @Students.studentlname</div>
+    }
+}
+

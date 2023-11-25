@@ -1,0 +1,25 @@
+﻿<!--This defines the model type for this view, specifying it as a teacher object-->
+
+@model SchoolProject.Models.Teacher
+
+
+<!--Set the title of the page to "List" in the ViewBag-->
+@{
+    ViewBag.Title = "Show";
+}
+
+
+<!--Display a heading indicating the employee number of the teacher using the value from the Teacher model.-->
+<h2>emp no @Model.employmeenumber</h2>
+
+<!--Displays the hire date of the teacher using the value from the Teacher model.-->
+<p>hire date @Model.hiredate</p>
+
+<!--Displays the salary of the teacher using the value from the Teacher model.-->
+<p>salary @Model.salary</p>
+
+<!--Displays the classname of the teacher using the value from the Teacher model.-->
+<p>classname @Model.classname</p>
+
+
+
